@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+service UserCRUD {
+  rpc GetUser (User) returns (User) {}
+}
+
+message User {
+  int32 id = 1;
+  string name = 2;
+  int32 likeCount = 3;
+  string createdAt = 4;
+}
+
